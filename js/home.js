@@ -12,17 +12,19 @@ $(document).ready(function(){
         dots: true,
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         responsive: [
             {
                 breakpoint: bp_tablet,
                 settings: {
+                    arrows: false,
                     slidesToShow: 2
                 }
             },
             {
                 breakpoint: bp_phone,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1
                 }
             }
