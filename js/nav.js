@@ -6,18 +6,9 @@
 		header.classList.toggle("header-background", scrollTop >= 50 || document.body.classList.contains("nav-open"));
 	}
 
-	var didScroll = false;
-
 	$(window).scroll(function () {
-		didScroll = true;
+		changeHeader();
 	});
-
-	setInterval(function() {
-		if (didScroll) {
-			didScroll = false;
-			changeHeader();
-		}
-	}, 100);
 
 	changeHeader();
 
