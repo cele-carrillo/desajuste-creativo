@@ -11,4 +11,4 @@ test:
 
 .PHONY: watch
 watch:
-	bundle exec jekyll serve --drafts
+	bundle exec jekyll serve --drafts --livereload

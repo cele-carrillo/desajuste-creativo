@@ -26,15 +26,4 @@
 		document.body.classList.toggle("nav-open");
 		changeHeader();
 	});
-
-	$("a[href*=\\#]").on("click", function (event) {
-		if(this.pathname === window.location.pathname) {
-			event.preventDefault();
-
-			$("html, body").animate({
-				scrollTop: $(this.hash).offset().top
-			}, 500);
-		}
-	});
-
 })();
