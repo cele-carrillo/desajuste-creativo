@@ -15,4 +15,4 @@ watch:
 
 .PHONY: watch-collab
 watch-collab:
-	bundle exec jekyll serve --drafts --livereload -H 0.0.0.0
+	bundle exec jekyll serve --livereload -H 0.0.0.0
