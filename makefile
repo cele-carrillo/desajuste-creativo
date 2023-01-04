@@ -11,8 +11,8 @@ test:
 
 .PHONY: watch
 watch:
-	bundle exec jekyll serve --drafts
+	bundle exec jekyll serve --config _config.yml,_config_local.yml
 
 .PHONY: watch-collab
 watch-collab:
-	bundle exec jekyll serve --livereload -H 0.0.0.0
+	bundle exec jekyll serve --config _config.yml,_config_local.yml --livereload -H 0.0.0.0
